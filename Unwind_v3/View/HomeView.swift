@@ -8,24 +8,32 @@
 import SwiftUI
 
 struct HomeView: View {
-    var title: String
-    var description: String
+    private let title: String
+    private let description: String
+    
+    init(title: String, description: String) {
+        self.title = title
+        self.description = description
+    }
+    
     var body: some View {
         Image(systemName: "sunrise.fill")
             .resizable()
             .aspectRatio(contentMode: .fit)
             .frame(width: 50, height: 50)
-            .padding(.init(top: 25, leading: 0, bottom: 0, trailing: 0))
+            .padding(.top, 25)
         Text(title)
             .font(.title)
         Text(description)
-            .padding(.init(top: 10, leading: 25, bottom: 0, trailing: 25))
+            .padding(.top, 10)
+            .padding(.leading, 25)
+            .padding(.trailing, 25)
             .multilineTextAlignment(.center)
     }
 }
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        HomeView(title: "home-title".localized, description: "home-description".localized)
     }
 }

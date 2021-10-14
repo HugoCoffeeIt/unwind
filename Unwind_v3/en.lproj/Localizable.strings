@@ -1,0 +1,16 @@
+/* 
+  Localizable.strings
+  Unwind_v3
+
+  Created by Hugo de Groot on 14/10/2021.
+  
+*/
+
+"home-title" = "Verse start";
+"home-description" = "Deze ademhalingsoefening bereidt je voor op de dag met een verfrist, ontspannen gevoel en schudt ook eventuele slaapresten van je af.";
+"ontspan" = "Ontspan";
+"sessie" = "Sessie begint over";
+"adem in" = "Adem in";
+"adem uit" = "Adem uit";
+"door je neus" = "Door je neus";
+"door je mond" = "Door je mond";
